@@ -1,0 +1,33 @@
+.banner-img {
+    clip-path: ellipse(98% 88% at 47% 10%);
+
+    .banner-img {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 330px;
+        width: 100%;
+
+
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .banner-img {
+        margin-bottom: 15px;
+        clip-path: ellipse(98% 88% at 47% 10%);
+    
+        .banner-img {
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 330px;
+            width: 100%;
+    
+    
+        }
+    }
+}

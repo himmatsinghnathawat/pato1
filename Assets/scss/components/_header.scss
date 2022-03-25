@@ -1,0 +1,178 @@
+.header {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    top: 0px;
+    padding-top: 0px;
+
+    &-navbar {
+        background-color: $black;
+        width: 100%;
+        top: 0px;
+
+        &-top {
+            display: flex;
+            justify-content: end;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            right: 0px;
+            border-bottom: 2px solid $white;
+            font-size: 21px;
+            letter-spacing: -0.25;
+            line-height: 25px;
+            @include max-screen(sm) {
+                font-size: 18px;
+                letter-spacing: -0.25;
+                line-height: 15px;
+            }
+            @include max-screen(md) {
+                font-size: 14px;
+                letter-spacing: -0.25;
+                line-height: 15px;
+            }
+            a {
+                color: $white;
+                padding: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &-navbar-btn {
+        width: 100%;
+    background-color: rgba(0,0,0,0.7);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom:2px solid $white ;
+
+        &-logo {
+            width: 30%;
+            padding: 20px;
+
+            img {
+                width: 180px;
+                text-align: center;
+                
+                @include max-screen(sm) {
+                   width: 70px;
+                }
+            
+                @include max-screen(md) {
+                   width: 109px;
+                }
+            }
+        }
+
+        &-link {
+            width: 67%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: baseline;
+            font-size: 18px;
+            line-height: 20px;
+            color: $white;
+            justify-content: space-around;
+            p,
+            a {
+                font-size: 18px;
+                line-height: 20px;
+                color: $white;
+                text-decoration: none;
+                padding: 45px 5px;
+                @include max-screen(sm) {
+                    font-size: 10px;
+                    line-height: 0px;
+                    padding: 25px 5px;
+                }
+                @include max-screen(md) {
+                    font-size: 14px;
+                line-height: 0px;
+                padding: 29px 6px;
+                }
+            }
+            :hover {
+                text-decoration: underline;
+                background-color: black;
+            }
+        }
+    }
+    .hidden-upper-nav {
+        display: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        font-size: 18px;
+        line-height: 20px;
+        color: $white;
+        justify-content: space-evenly;
+        background-color: rgba(0,0,0,0.7);
+        a {
+            color: $white;
+            text-decoration: none;
+            padding: 45px 5px;
+            @include max-screen(sm) {
+                font-size: 10px;
+                line-height: 0px;
+                padding: 25px 5px;
+            }
+            @include max-screen(md) {
+                font-size: 14px;
+            line-height: 0px;
+            padding: 29px 6px;
+            }
+        }
+            :hover {
+                text-decoration: underline;
+                background-color: $black;
+        }
+    }
+    .hidden-lower-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        color: $white;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.7);
+        a {
+            font-size: 18px;
+            line-height: 20px;
+            color: $white;
+            text-decoration: none;
+            padding: 45px 5px;
+            @include max-screen(sm) {
+                font-size: 10px;
+                line-height: 0px;
+                padding: 25px 5px;
+            }
+            @include max-screen(md) {
+                font-size: 14px;
+            line-height: 0px;
+            padding: 29px 6px;
+            }
+        }
+           & :hover {
+                text-decoration: underline;
+                background-color: black;
+            }
+    }
+}
+
+

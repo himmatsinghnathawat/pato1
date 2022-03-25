@@ -1,0 +1,223 @@
+.teams {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    &-heading {
+        border-bottom: 1px solid $cerrlean-frost;
+        margin-top: 50px;
+        width: 100%;
+        h1 {
+            font-size: 48px;
+            line-height: 57px;
+            color: $cerrlean-frost;
+            font-family: "Bodoni Moda", serif;
+            @include max-screen(sm) {
+                font-size: 39px;
+                line-height: 34px;
+            }
+            @include max-screen(md) {
+                font-size: 28px;
+                line-height: 34px;
+            }
+        }
+    }
+
+    &-paragraph {
+        padding-top: 30px;
+            p {
+                color: $black;
+                font-family: "Open Sans", sans-serif;
+                font-size: 25px;
+                line-height: 1.2;
+
+                @include max-screen(sm) {
+                    font-size: 10px;
+                }
+    
+                @include max-screen(md) {
+                   font-size: 16px;
+                }
+            }
+    }
+    &-Surgical {
+        border-bottom: 1px solid $cerrlean-frost;
+        margin-top: 50px;
+        width: 100%;
+        h1 {
+            padding-bottom: 10px;
+            line-height: 57px;
+            font-size: 48px;
+            color: $cerrlean-frost;
+            font-family: "Bodoni Moda", serif;
+            @include max-screen(sm) {
+                font-size: 30px;
+                line-height: 13px;
+            }
+            @include max-screen(md) {
+                font-size: 30px;
+                line-height: 13px;
+            }
+        }
+
+    }
+    &-container {
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 64px;
+        border: 1px solid $black;
+        width: 100%;
+        &-image {
+            width: 50%;
+            min-height: 459px;
+            background-image: url('../../images/team-profile.png');
+            background-size: cover;
+            @include max-screen(sm) {
+                width: 50%;
+            }
+            @include max-screen(md) {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                @include max-screen(sm) {
+                    width: 50%;
+                }
+                @include max-screen(md) {
+                    width: 100%;
+                }
+            }
+        }
+         &-text {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            @include max-screen(sm) {
+                width: 100%;
+            }
+
+            @include max-screen(md) {
+                width: 100%;
+            }
+            &-upperpara {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 22px;
+                @include max-screen(sm) {
+                    font-size: 15px;
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+                @include max-screen(md) {
+                    font-size: 16px;
+                    padding-bottom: 25px;
+                    padding-top: 10px;
+                }
+            }
+             &-lowerpara {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 22px;
+
+                @include max-screen(sm) {
+                    font-size: 15px;
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+                @include max-screen(md) {
+                    font-size: 16px;
+                    padding-bottom: 25px;
+                    padding-top: 10px;
+                }
+            }
+            &-bttn {
+                background-color: $cerrlean-frost;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                border-bottom-right-radius: 10px;
+                p {
+                    padding: 10px;
+                    i {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &-Doctor{
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        padding: 12px;
+        gap: 10px;
+        &-data {
+            position: relative;
+            width: 25%;
+            text-align: center;
+            border-radius: 52px;
+            overflow: hidden;
+
+            @include max-screen(sm) {
+                width: 22%;
+                border-radius: 20px;
+            }
+            @include max-screen(md) {
+                width: 22%;
+                border-radius: 9px;
+            }
+            &-innerBorder {
+                width: 90%;
+                height: 90%;
+                margin: 5%;
+                border-radius: 43px;
+                position: absolute;
+                top: 0;
+                border: 2px solid $grey44;
+                @include max-screen(sm) {
+                    border-radius: 22px;
+                }
+                @include max-screen(md) {
+                    border-radius: 29px;
+                }
+
+            }
+        }
+        img {
+            width: 100%;
+        }
+        h4 {
+            background-color: $cerrlean-frost;
+            position: absolute;
+            padding: 5px;
+            bottom: 0px;
+            z-index: 3;
+            @include max-screen(sm) {
+                padding: 0px;
+                font-size: 9px;
+            }
+            @include max-screen(md) {
+                padding: 2px;
+                font-size: 11px;
+            }
+        }
+    }
+}
